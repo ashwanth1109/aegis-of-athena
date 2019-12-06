@@ -50,3 +50,17 @@ For example, you can use the python intepreter:
 #!/usr/bin/python
 print "This is a python script"
 ```
+
+### Running scripts
+
+You need to give the script permission to run in the shell before you execute it.
+
+```
+chmod 755 script.sh
+```
+
+Then run it,
+
+```
+./script.sh
+```
