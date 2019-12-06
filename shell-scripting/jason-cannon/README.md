@@ -37,3 +37,16 @@ ps -fp $PID
 ```
 
 this lets you look at the process table
+
+### Shebang or not to Shebang
+
+If a script doesnt contain the Shebang, the commands are executed using your shell. Different shells have varying syntax.
+
+Also, you dont have to use a shell as your intepreter for your scripts.
+
+For example, you can use the python intepreter:
+
+```sh
+#!/usr/bin/python
+print "This is a python script"
+```
