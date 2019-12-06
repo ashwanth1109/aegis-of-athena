@@ -73,3 +73,11 @@ Then run it,
 - Syntax: VARIABLE_NAME="Value"
 - To use a variable, \$VARIABLE_NAME
 - or \${VARIABLE_NAME}
+
+### Assigning the output of a command to a variable
+
+```sh
+#!/bin/bash
+SERVER_NAME=$(hostname)
+echo 'You are running this script on $SERVER_NAME'
+```
