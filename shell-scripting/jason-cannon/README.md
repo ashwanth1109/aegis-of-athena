@@ -64,3 +64,12 @@ Then run it,
 ```
 ./script.sh
 ```
+
+### Variables
+
+- Name-Value pairs
+- By convention, uppercase
+- No spaces between = and "
+- Syntax: VARIABLE_NAME="Value"
+- To use a variable, \$VARIABLE_NAME
+- or \${VARIABLE_NAME}
