@@ -102,3 +102,12 @@ To look up test conditions:
 #!/bin/bash
 help test
 ```
+
+### Loops
+
+```sh
+for VARIABLE_NAME in ITEM_1 ITEM_N
+do
+  commands
+done
+```
