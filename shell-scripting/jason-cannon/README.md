@@ -111,3 +111,19 @@ do
   commands
 done
 ```
+
+### Access positional parameters on the command line
+
+```sh
+$0
+$1
+$N
+```
+
+Access all parameters
+
+```sh
+$@
+```
+
+Note: you can use `read` to accept input
