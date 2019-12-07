@@ -81,3 +81,24 @@ Then run it,
 SERVER_NAME=$(hostname)
 echo 'You are running this script on $SERVER_NAME'
 ```
+
+### Conditional statements
+
+```sh
+if [ condition-is-true ]
+then
+  commands
+elif [ condition-is-true ]
+then
+  commands
+else
+  commands
+fi
+```
+
+To look up test conditions:
+
+```sh
+#!/bin/bash
+help test
+```
