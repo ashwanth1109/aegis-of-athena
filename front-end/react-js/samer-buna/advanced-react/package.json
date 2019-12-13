@@ -1,0 +1,47 @@
+{
+    "name": "advanced-react",
+    "version": "1.0.0",
+    "main": "lib/server.js",
+    "repository": "https://github.com/ashwanth1109/advanced-react.git",
+    "author": "Ashwanth A R <ashwanth1109@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
+        "webpack": "webpack -wd",
+        "test": "jest --watch",
+        "nodemon": "nodemon --exec babel-node lib/server.js"
+    },
+    "babel": {
+        "presets": [
+            "react",
+            "env",
+            "stage-2"
+        ]
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "enzyme": "^3.8.0",
+        "enzyme-adapter-react-16": "^1.7.1",
+        "eslint-plugin-react": "^7.11.1",
+        "jest": "^23.6.0",
+        "prettier-eslint": "^8.8.2",
+        "react-test-renderer": "^16.6.3",
+        "webpack-cli": "^3.1.2"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "babel-cli": "^6.26.0",
+        "babel-loader": "7",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "pm2": "^3.2.3",
+        "prop-types": "^15.6.2",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "webpack": "^4.27.1"
+    }
+}
