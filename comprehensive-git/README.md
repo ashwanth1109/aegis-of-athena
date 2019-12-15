@@ -9,3 +9,9 @@ This folder is meant to be my one-stop shop for all things related to git. This 
 ```
 git clone --depth=16 https://github.com/angular/angular-phonecat.git
 ```
+
+#### Detached HEAD state
+
+```
+git checkout -f step-0
+```
