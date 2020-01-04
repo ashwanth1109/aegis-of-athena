@@ -42,4 +42,4 @@ The two kinds of new markup you will see above are:
 
 ### Contents
 
-- [Data Binding]()
+- [Data Binding](https://github.com/ashwanth1109/aegis-of-athena/blob/master/front-end/angular-js/DATA-BINDING.md)
