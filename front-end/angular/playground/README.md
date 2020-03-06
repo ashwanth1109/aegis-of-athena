@@ -1,27 +1,48 @@
 # Playground
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+Initialize app with @angular/cli: `ng new project-name`
 
-## Development server
+Launch the app: `ng serve -o` (serves at `http://localhost:4200/`)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Component
 
-## Code scaffolding
+Root: App Component
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `app.component.ts` [Script]
+- `app.component.html` [Template]
+- `app.component.css` [Styles]
 
-## Build
+Interpolation Binding: `{{ variable }}`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+@Component: decorator function that specifies the Angular metadata for the component
 
-## Running unit tests
+```js
+import { Component, OnInit } from "@angular/core";
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@Component({
+  selector: "app-heroes", // element selector
+  templateUrl: "./heroes.component.html", // location of template
+  styleUrls: ["./heroes.component.css"] // location of css styles
+})
+export class TestComponent implements OnInit {
+  constructor() {} // standard class constructor
+  // lifecycle hook - called shortly after creating a component
+  ngOnInit() {
+    // put your initialization logic here
+  }
+}
+```
 
-## Running end-to-end tests
+Generate new components using CLI: `ng g c component-name`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Using interfaces:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```js
+export interface Hero {
+  id: number;
+  name: string;
+}
+```
+ Type checking in TypeScript focuses on the shape that values have - duck typing (or) structural subtyping
+ Interfaces fill the role of naming these types and are a powerful way of defining contracts within your code
+ 

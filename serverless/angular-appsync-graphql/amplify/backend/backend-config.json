@@ -1,0 +1,20 @@
+{
+	"api": {
+		"RestaurantAPI": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "API key for authorization",
+							"apiKeyExpirationDays": "7"
+						}
+					}
+				}
+			}
+		}
+	}
+}

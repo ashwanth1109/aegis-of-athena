@@ -1,0 +1,15 @@
+{
+    "appsync": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-angularappsyncgraphq-appsync-225911-authRole",
+            "UnauthRoleArn": "arn:aws:iam::452364846299:role/amplify-angularappsyncgraphq-appsync-225911-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::452364846299:role/amplify-angularappsyncgraphq-appsync-225911-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-angularappsyncgraphq-appsync-225911-deployment",
+            "UnauthRoleName": "amplify-angularappsyncgraphq-appsync-225911-unauthRole",
+            "StackName": "amplify-angularappsyncgraphq-appsync-225911",
+            "StackId": "arn:aws:cloudformation:ap-south-1:452364846299:stack/amplify-angularappsyncgraphq-appsync-225911/0319f310-5fd0-11ea-b3e6-0a95c9550e3e",
+            "AmplifyAppId": "d3ccivy1hhffpi"
+        }
+    }
+}
