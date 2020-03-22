@@ -1,0 +1,17 @@
+<div class="full-size">
+  <div class="game-container">
+    <div class="game-area" [ngStyle]="{'width': gameWidth + 'px', 'height': gameHeight + 'px'}">
+      <ng-container *ngIf="isGameOver === false else elseBlock">
+        <span>Score: {{score}}</span>
+        <div *ngFor="let alphabet of alphabetArray" class="game-row">
+          <span [ngStyle]="{'left': alphabet.yPos + 'px'}" class="alphabet-container">{{ alphabet.value }}</span>
+        </div>
+      </ng-container>
+      <ng-template #elseBlock>
+        <div class="game-over">
+          Game Over
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.example-container {
+  flex: 1;
+  height: 100vh;
+  border: 1px solid #555;
+}
+
+.sidenav {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.sidenav-option {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-left: 2px solid white;
+  display: flex;
+  justify-content: center;
+}

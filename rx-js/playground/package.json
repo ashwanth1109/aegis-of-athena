@@ -1,5 +1,5 @@
 {
-  "name": "angular-appsync-graphql",
+  "name": "playground",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,17 +12,16 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.2",
+    "@angular/cdk": "^9.1.3",
     "@angular/common": "~9.0.2",
     "@angular/compiler": "~9.0.2",
     "@angular/core": "~9.0.2",
     "@angular/forms": "~9.0.2",
+    "@angular/material": "^9.1.3",
     "@angular/platform-browser": "~9.0.2",
     "@angular/platform-browser-dynamic": "~9.0.2",
     "@angular/router": "~9.0.2",
-    "angular-in-memory-web-api": "^0.9.0",
-    "aws-amplify": "^2.2.6",
-    "aws-amplify-angular": "^4.1.7",
-    "rxjs": "~6.5.4",
+    "rxjs": "^6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

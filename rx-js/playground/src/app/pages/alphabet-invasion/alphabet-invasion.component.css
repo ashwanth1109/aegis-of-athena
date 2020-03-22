@@ -1,0 +1,23 @@
+.game-container {
+  width: 100%;
+  padding: 60px;
+  height: 80vh;
+}
+
+.game-area {
+  background-color: #ffffff;
+  height: 500px;
+  color: #000;
+  padding: 4px;
+}
+
+.game-row {
+  width: 100%;
+  position: relative;
+  height: 20px;
+}
+
+.alphabet-container {
+  position: absolute;
+  top: 0;
+}
