@@ -33,29 +33,30 @@ Based on the example by `adamlubek` here: https://www.learnrxjs.io/learn-rxjs/re
 ```
 
 ```css
-.example-container {
-  flex: 1;
-  height: 100vh;
-  border: 1px solid #555;
+.game-container {
+  width: 100%;
+  padding: 60px;
+  height: 80vh;
 }
 
-.sidenav {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 16px;
+.game-area {
+  background-color: #ffffff;
+  height: 500px;
+  color: #000;
+  padding: 4px;
 }
 
-.sidenav-option {
-  color: #fff;
-  text-decoration: none;
-  padding: 16px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border-left: 2px solid white;
-  display: flex;
-  justify-content: center;
+.game-row {
+  width: 100%;
+  position: relative;
+  height: 20px;
 }
+
+.alphabet-container {
+  position: absolute;
+  top: 0;
+}
+
 ```
 
 ```js
