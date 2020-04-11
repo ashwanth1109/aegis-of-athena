@@ -1,7 +1,7 @@
 <div class="container">
   <h2>User Settings</h2>
 
-  <form #form="ngForm">
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)">
     <div class="form-group">
       <label for="name">Name</label>
       <input
@@ -11,7 +11,17 @@
         class="form-control"
         type="text"
         placeholder="Enter name here"
+        required
+        #nameField="ngModel"
+        [class.field-error]="form.submitted && nameField.invalid"
+        (blur)="onBlur(nameField)"
       />
+      <div
+        class="alert alert-danger"
+        [hidden]="!form.submitted || nameField.valid"
+      >
+        Enter a name
+      </div>
     </div>
 
     <p>User Interface Styles</p>
@@ -88,7 +98,7 @@
         class="form-check-input"
       />
       <label for="emailOffers" class="form-check-label"
-        >Email Special Offers</label
+      >Email Special Offers</label
       >
     </div>
 
