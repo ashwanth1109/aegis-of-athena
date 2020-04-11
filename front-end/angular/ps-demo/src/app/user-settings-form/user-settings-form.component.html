@@ -98,8 +98,12 @@
         class="form-check-input"
       />
       <label for="emailOffers" class="form-check-label"
-      >Email Special Offers</label
+        >Email Special Offers</label
       >
+    </div>
+
+    <div [hidden]="!postError" class="alert alert-danger">
+      {{ postErrorMessage | json }}
     </div>
 
     <button class="btn btn-primary">Send</button>
